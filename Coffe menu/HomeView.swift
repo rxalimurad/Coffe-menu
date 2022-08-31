@@ -8,10 +8,19 @@
 import SwiftUI
 
 struct HomeView: View {
+    var categories: [String: [Drink]] {
+        Dictionary(grouping: drinkData, by: { $0.category.rawValue })
+    }
     var body: some View {
         NavigationView {
             Navigation(navBody: AnyView(
-                Text("NOP")
+                List(categories.keys.sorted(), id: \String.self) {
+                    key in
+                    DrinkView(categoryName: "\(key) Drink".uppercased(), drinks: self.categories[key]!)
+                        .frame(height: 320)
+                        .padding(.top)
+                        .padding(.bottom)
+                }
             ))
         }
     }

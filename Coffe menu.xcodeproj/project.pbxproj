@@ -27,6 +27,7 @@
 		5FC7447F28BF72A0003831B8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7447E28BF72A0003831B8 /* Constant.swift */; };
 		5FC7448328BF8102003831B8 /* DrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7448228BF8102003831B8 /* DrinkView.swift */; };
 		5FC7448528BF834D003831B8 /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7448428BF834C003831B8 /* DrinkItem.swift */; };
+		FA83599E28BFFACC00915F5B /* DrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83599D28BFFACB00915F5B /* DrinkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		5FC7447E28BF72A0003831B8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		5FC7448228BF8102003831B8 /* DrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkView.swift; sourceTree = "<group>"; };
 		5FC7448428BF834C003831B8 /* DrinkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
+		FA83599D28BFFACB00915F5B /* DrinkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,14 +123,15 @@
 			isa = PBXGroup;
 			children = (
 				5F461D3628BF57100049AA43 /* Coffe_menuApp.swift */,
-				5F461D3828BF57100049AA43 /* HomeView.swift */,
 				5F461D6028BF59260049AA43 /* GoogleService-Info.plist */,
 				5F461D3A28BF57190049AA43 /* Assets.xcassets */,
 				5F461D3C28BF57190049AA43 /* Preview Content */,
 				5FC7448128BF76F1003831B8 /* Model */,
 				5FC7448028BF76E4003831B8 /* Helpers */,
+				5F461D3828BF57100049AA43 /* HomeView.swift */,
 				5FC7448228BF8102003831B8 /* DrinkView.swift */,
 				5FC7448428BF834C003831B8 /* DrinkItem.swift */,
+				FA83599D28BFFACB00915F5B /* DrinkDetail.swift */,
 			);
 			path = "Coffe menu";
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			files = (
 				5F461D3928BF57100049AA43 /* HomeView.swift in Sources */,
 				5FC7448528BF834D003831B8 /* DrinkItem.swift in Sources */,
+				FA83599E28BFFACC00915F5B /* DrinkDetail.swift in Sources */,
 				5FC7447B28BF69F0003831B8 /* Drink.swift in Sources */,
 				5FC7447F28BF72A0003831B8 /* Constant.swift in Sources */,
 				5FC7448328BF8102003831B8 /* DrinkView.swift in Sources */,
@@ -490,7 +494,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -519,7 +523,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

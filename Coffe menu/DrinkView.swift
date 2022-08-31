@@ -14,10 +14,13 @@ struct DrinkView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text(self.categoryName)
+                .font(.title)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(drinks) {drink in
-                        Text(drink.imageName)
+                        DrinkItem(drink: drink)
+                            .frame(width: 300)
+                            .padding(.trailing, 30)
                     }
                 }
             }

@@ -10,13 +10,24 @@ import SwiftUI
 struct DrinkItem: View {
     var drink: Drink
     var body: some View {
-        VStack(alignment: .center, spacing:16) {
+        VStack(alignment: .leading, spacing:16) {
             Image(drink.imageName)
                 .resizable()
                 .renderingMode(.original)
                 .frame(width: 300, height: 170)
                 .cornerRadius(15)
                 .shadow(radius: 15)
+            VStack(alignment: .leading, spacing: 5) {
+                Text(drink.name)
+                    .foregroundColor(.primary)
+                    .font(.headline)
+                Text(drink.description)
+                    .foregroundColor(.secondary)
+                    .font(.subheadline)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(2)
+                    .frame(height: 40)
+            }
         }
     }
 }
