@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F29E0D928C1B85300D52D41 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29E0D828C1B85300D52D41 /* CheckoutView.swift */; };
+		5F29E0DB28C1C37600D52D41 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29E0DA28C1C37600D52D41 /* Order.swift */; };
+		5F29E0DD28C1CD9C00D52D41 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29E0DC28C1CD9B00D52D41 /* LoginView.swift */; };
+		5F29E0DF28C1F4ED00D52D41 /* FinishRegistractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29E0DE28C1F4ED00D52D41 /* FinishRegistractionView.swift */; };
+		5F29E0E128C2161700D52D41 /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29E0E028C2161700D52D41 /* FUser.swift */; };
 		5F461D3728BF57100049AA43 /* Coffe_menuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F461D3628BF57100049AA43 /* Coffe_menuApp.swift */; };
 		5F461D3928BF57100049AA43 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F461D3828BF57100049AA43 /* HomeView.swift */; };
 		5F461D3B28BF57190049AA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F461D3A28BF57190049AA43 /* Assets.xcassets */; };
@@ -53,6 +58,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F29E0D828C1B85300D52D41 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		5F29E0DA28C1C37600D52D41 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		5F29E0DC28C1CD9B00D52D41 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5F29E0DE28C1F4ED00D52D41 /* FinishRegistractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRegistractionView.swift; sourceTree = "<group>"; };
+		5F29E0E028C2161700D52D41 /* FUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
 		5F461D3328BF57100049AA43 /* Coffe menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffe menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F461D3628BF57100049AA43 /* Coffe_menuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffe_menuApp.swift; sourceTree = "<group>"; };
 		5F461D3828BF57100049AA43 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -184,6 +194,8 @@
 			children = (
 				5FC7447A28BF69F0003831B8 /* Drink.swift */,
 				5FC7448628C07128003831B8 /* OrderBasket.swift */,
+				5F29E0DA28C1C37600D52D41 /* Order.swift */,
+				5F29E0E028C2161700D52D41 /* FUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +217,9 @@
 				5FC7448428BF834C003831B8 /* DrinkItem.swift */,
 				FA83599D28BFFACB00915F5B /* DrinkDetail.swift */,
 				5FC7448E28C08D2E003831B8 /* OrderBasketView.swift */,
+				5F29E0D828C1B85300D52D41 /* CheckoutView.swift */,
+				5F29E0DC28C1CD9B00D52D41 /* LoginView.swift */,
+				5F29E0DE28C1F4ED00D52D41 /* FinishRegistractionView.swift */,
 			);
 			path = VIews;
 			sourceTree = "<group>";
@@ -370,8 +385,13 @@
 				5FC7447F28BF72A0003831B8 /* Constant.swift in Sources */,
 				5FC7448728C07128003831B8 /* OrderBasket.swift in Sources */,
 				5FC7448328BF8102003831B8 /* DrinkView.swift in Sources */,
+				5F29E0D928C1B85300D52D41 /* CheckoutView.swift in Sources */,
+				5F29E0DF28C1F4ED00D52D41 /* FinishRegistractionView.swift in Sources */,
 				5FC7447D28BF71C9003831B8 /* FirebaseReference.swift in Sources */,
+				5F29E0DB28C1C37600D52D41 /* Order.swift in Sources */,
 				5FC7448928C07782003831B8 /* DrinkListener.swift in Sources */,
+				5F29E0E128C2161700D52D41 /* FUser.swift in Sources */,
+				5F29E0DD28C1CD9C00D52D41 /* LoginView.swift in Sources */,
 				5F461D3728BF57100049AA43 /* Coffe_menuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

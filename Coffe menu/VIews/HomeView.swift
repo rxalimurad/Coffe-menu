@@ -36,14 +36,19 @@ struct HomeView: View {
                     } label: {
                         Image("basket")
                     }.sheet(isPresented: $showBasket) {
-                        OrderBasketView()
+                        if FUser.currentUser() != nil && FUser.currentUser()!.onBoarding {
+                            OrderBasketView()
+                        } else if FUser.currentUser() != nil {
+                            FinishRegistractionView()
+                        } else {
+                            LoginView()
+                        }
+                        
                     }
                     
                 }
             }
         }
-        
-        
     }
 }
 

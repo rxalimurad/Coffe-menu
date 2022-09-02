@@ -22,11 +22,16 @@ struct OrderBasketView: View {
                         }
                     }.onDelete { indexSet in
                         print("Delete at \(indexSet)")
+                        self.basketListner.orderBasket.items.remove(at: indexSet.first!)
+                        self.basketListner.orderBasket.saveBaseketToFirestore()
                     }
                 }
                 Section {
-                    Text("Place Order")
-                        .disabled(self.basketListner.orderBasket?.items.isEmpty ?? true)
+                    NavigationLink(destination: CheckoutView()) {
+                        Text("Place Order")
+                            .disabled(self.basketListner.orderBasket?.items.isEmpty ?? true)
+                    }
+                    
                 }
             }
             .navigationTitle("Basket")
