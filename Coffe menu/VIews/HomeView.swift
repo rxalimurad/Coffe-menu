@@ -26,7 +26,9 @@ struct HomeView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("Logout") {
-                        print("Logging out")
+                        FUser.logoutCurrentUser { error in
+                            print("Error in loggin out", error?.localizedDescription)
+                        }
                     }
                     
                 }

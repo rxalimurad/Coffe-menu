@@ -13,6 +13,7 @@ struct FinishRegistractionView: View {
     @State var telephone = ""
     @State var address = ""
     
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         
@@ -43,6 +44,24 @@ struct FinishRegistractionView: View {
         return !self.name.isEmpty && !self.surename.isEmpty && !self.telephone.isEmpty && !self.address.isEmpty
     }
     private func finishRegistraction() {
+        let fullName = name + " " + surename
+        FUser.updateCurrentUser(withValues: [
+            kFIRSTNAME : name,
+            kLASTNAME : surename,
+            kFULLNAME : fullName,
+            kFULLADDRESS : address,
+            kPHONENUMBER : telephone,
+            kONBOARD : true,
+           
+        ]) {error in
+            if error != nil {
+                print ("error uddating user", error!.localizedDescription)
+                return
+            }
+            self.presentationMode.wrappedValue.dismiss()
+            
+        }
+        
         
     }
 }

@@ -9,9 +9,9 @@ import SwiftUI
 
 struct DrinkDetail: View {
     @State private var showingAlert = false
-    
     var drink: Drink
-    
+    @State private var showingLogin = false
+
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
@@ -44,7 +44,7 @@ struct DrinkDetail: View {
                 
                 HStack {
                     Spacer()
-                    OrderButton(showAlert:$showingAlert, drink: drink)
+                    OrderButton(showAlert:$showingAlert, showingLogin: $showingLogin, drink: drink)
                     Spacer()
                     
                 }
@@ -69,14 +69,21 @@ struct SDrinkDetail_Previews: PreviewProvider {
 
 
 struct OrderButton: View {
+
     @ObservedObject var basketListner = BasketListener()
     @Binding var showAlert: Bool
+    @Binding var showingLogin: Bool
+
     var drink: Drink
     var body: some View {
         Button {
-            print ("ordered \(drink.name)")
-            self.showAlert.toggle()
-            addItemtoBasket()
+            if FUser.currentUser() != nil && FUser.currentUser()!.onBoarding {
+                self.showAlert.toggle()
+                addItemtoBasket()
+            } else {
+                self.showingLogin.toggle()
+            }
+            
         } label: {
             Text("Add to basket")
         }
@@ -85,6 +92,13 @@ struct OrderButton: View {
         .background(Color.blue)
         .font(.headline)
         .cornerRadius(10)
+        .sheet(isPresented: $showingLogin) {
+            if FUser.currentUser() != nil {
+                FinishRegistractionView()
+            } else {
+                LoginView()
+            }
+        }
 
     }
     
@@ -94,7 +108,7 @@ struct OrderButton: View {
             orderBaseket = self.basketListner.orderBasket
         } else {
             orderBaseket = OrderBasket()
-            orderBaseket.ownerId = "123"
+            orderBaseket.ownerId = FUser.currentId()
             orderBaseket.id = UUID().uuidString
         }
         orderBaseket.add(self.drink)

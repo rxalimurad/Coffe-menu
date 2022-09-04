@@ -9,6 +9,10 @@ import SwiftUI
 
 struct LoginView: View {
     @State var showingSignup = false
+    @State var showingFinishReg = false
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     @State var email = ""
     @State var password = ""
     @State var confrimPassword = ""
@@ -82,6 +86,10 @@ struct LoginView: View {
             SignUpView(showSignup: $showingSignup)
             
         }
+        .sheet(isPresented: $showingFinishReg) {
+            FinishRegistractionView()
+        }
+
     }
     
     private func register() {
@@ -103,10 +111,27 @@ struct LoginView: View {
         }
     }
     private func signin() {
-        
+        if !email.isEmpty && !password.isEmpty {
+            FUser.loginUserWith(email: email, password: password) { error, isEmailVerified in
+                if error != nil {
+                    print ("Error in login", error!.localizedDescription)
+                    return
+                }
+                if FUser.currentUser() != nil && FUser.currentUser()!.onBoarding {
+                    self.presentationMode.wrappedValue.dismiss()
+                } else {
+                    self.showingFinishReg.toggle()
+                }
+            }
+            
+        }
     }
     private func resetPassword() {
-        
+        FUser.resetPassword(email: email) { error in
+            if error != nil {
+                print("Error in reseting password", error!.localizedDescription)
+            }
+        }
     }
 }
 
