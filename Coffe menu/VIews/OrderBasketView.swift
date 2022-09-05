@@ -21,7 +21,7 @@ struct OrderBasketView: View {
                             Text("$\(drink.price.toString())")
                         }
                     }.onDelete { indexSet in
-                        print("Delete at \(indexSet)")
+                        print(",,..Delete at \(indexSet)")
                         self.basketListner.orderBasket.items.remove(at: indexSet.first!)
                         self.basketListner.orderBasket.saveBaseketToFirestore()
                     }

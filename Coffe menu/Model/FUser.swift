@@ -96,7 +96,7 @@ class FUser {
             
             if error == nil {
                 authDataResult!.user.sendEmailVerification() {error in
-                    print("Verification email sent error is : \(error?.localizedDescription)")
+                    print(",,..Verification email sent error is : \(error?.localizedDescription)")
                 }
             }
             

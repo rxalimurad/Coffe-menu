@@ -71,7 +71,7 @@ struct CheckoutView: View {
         order.saveOrderToFirestore()
     }
     private func emptyBasket() {
-        
+        self.basketListner.orderBasket.emptyBaseket()
     }
 }
 

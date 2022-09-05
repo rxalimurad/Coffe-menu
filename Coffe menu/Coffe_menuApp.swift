@@ -20,7 +20,7 @@ struct Coffe_menuApp: App {
         WindowGroup {
             HomeView()
         }.onChange(of: scenePhase) { newScenePhase in
-            print("onChange \(newScenePhase)")
+            print(",,..onChange \(newScenePhase)")
         }
     }
 }

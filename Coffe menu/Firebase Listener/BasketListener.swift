@@ -58,7 +58,7 @@ class BasketListener: ObservableObject {
                     )
                     
                 } else {
-                    print("Have not drink")
+                    print(",,..Have not drink")
                     completion(drinkArray)
                 }
                 if drinkArray.count == withIds.count {

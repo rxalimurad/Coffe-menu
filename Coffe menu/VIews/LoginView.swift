@@ -29,7 +29,8 @@ struct LoginView: View {
                     Text("Email")
                         .fontWeight(.light)
                         .font(.headline)
-                        .foregroundColor(Color.init(.label))
+                    
+                        .foregroundColor(Color.black.opacity(0.75))
                         .opacity(0.75)
                     
                     TextField("Enter your email", text: $email)
@@ -38,7 +39,7 @@ struct LoginView: View {
                     Text("Password")
                         .fontWeight(.light)
                         .font(.headline)
-                        .foregroundColor(Color.init(.label))
+                        .foregroundColor(Color.black.opacity(0.75))
                         .opacity(0.75)
                     
                     SecureField("Enter your password", text: $password)
@@ -48,7 +49,7 @@ struct LoginView: View {
                         Text("Confirm Password")
                             .fontWeight(.light)
                             .font(.headline)
-                            .foregroundColor(Color.init(.label))
+                            .foregroundColor(Color.black.opacity(0.75))
                             .opacity(0.75)
                         
                         SecureField("Enter your confirm password", text: $confrimPassword)
@@ -97,17 +98,18 @@ struct LoginView: View {
             if password == confrimPassword {
                 FUser.registerUserWith(email: email, password: password) { error in
                     if error != nil {
-                        print("Error registering user: \(error!.localizedDescription)")
+                        print(",,..Error registering user: \(error!.localizedDescription)")
                         return
                     }
-                    print("User has been created")
+                    print(",,..User has been created")
+                    showingSignup.toggle()
                 }
                 
             } else {
-                print("passwords don't match")
+                print(",,..passwords don't match")
             }
         } else {
-            print("Email and password must be set")
+            print(",,..Email and password must be set")
         }
     }
     private func signin() {
@@ -117,10 +119,15 @@ struct LoginView: View {
                     print ("Error in login", error!.localizedDescription)
                     return
                 }
-                if FUser.currentUser() != nil && FUser.currentUser()!.onBoarding {
-                    self.presentationMode.wrappedValue.dismiss()
+                
+                if isEmailVerified {
+                    if FUser.currentUser() != nil && FUser.currentUser()!.onBoarding {
+                        self.presentationMode.wrappedValue.dismiss()
+                    } else {
+                        self.showingFinishReg.toggle()
+                    }
                 } else {
-                    self.showingFinishReg.toggle()
+                    print(",,..Kindly verify email")
                 }
             }
             
@@ -129,7 +136,7 @@ struct LoginView: View {
     private func resetPassword() {
         FUser.resetPassword(email: email) { error in
             if error != nil {
-                print("Error in reseting password", error!.localizedDescription)
+                print(",,..Error in reseting password", error!.localizedDescription)
             }
         }
     }

@@ -17,7 +17,7 @@ class Order: Identifiable {
         firebaseReference(.Order).document(self.id).setData(orderDictionaryFrom(self)) {
             error in
             if error != nil {
-                print("error saving order to firestore: ", error!.localizedDescription)
+                print(",,..error saving order to firestore: ", error!.localizedDescription)
             }
         }
     }
