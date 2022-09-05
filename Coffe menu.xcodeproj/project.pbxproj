@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F29E0D928C1B85300D52D41 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29E0D828C1B85300D52D41 /* CheckoutView.swift */; };
+		5F29E0DB28C1C37600D52D41 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29E0DA28C1C37600D52D41 /* Order.swift */; };
+		5F29E0DD28C1CD9C00D52D41 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29E0DC28C1CD9B00D52D41 /* LoginView.swift */; };
+		5F29E0DF28C1F4ED00D52D41 /* FinishRegistractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29E0DE28C1F4ED00D52D41 /* FinishRegistractionView.swift */; };
+		5F29E0E128C2161700D52D41 /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29E0E028C2161700D52D41 /* FUser.swift */; };
 		5F461D3728BF57100049AA43 /* Coffe_menuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F461D3628BF57100049AA43 /* Coffe_menuApp.swift */; };
-		5F461D3928BF57100049AA43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F461D3828BF57100049AA43 /* ContentView.swift */; };
+		5F461D3928BF57100049AA43 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F461D3828BF57100049AA43 /* HomeView.swift */; };
 		5F461D3B28BF57190049AA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F461D3A28BF57190049AA43 /* Assets.xcassets */; };
 		5F461D3E28BF57190049AA43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F461D3D28BF57190049AA43 /* Preview Assets.xcassets */; };
 		5F461D4828BF57190049AA43 /* Coffe_menuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F461D4728BF57190049AA43 /* Coffe_menuTests.swift */; };
 		5F461D5228BF57190049AA43 /* Coffe_menuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F461D5128BF57190049AA43 /* Coffe_menuUITests.swift */; };
 		5F461D5428BF57190049AA43 /* Coffe_menuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F461D5328BF57190049AA43 /* Coffe_menuUITestsLaunchTests.swift */; };
+		5F461D6128BF59270049AA43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F461D6028BF59260049AA43 /* GoogleService-Info.plist */; };
+		5FC7447B28BF69F0003831B8 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7447A28BF69F0003831B8 /* Drink.swift */; };
+		5FC7447D28BF71C9003831B8 /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7447C28BF71C9003831B8 /* FirebaseReference.swift */; };
+		5FC7447F28BF72A0003831B8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7447E28BF72A0003831B8 /* Constant.swift */; };
+		5FC7448328BF8102003831B8 /* DrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7448228BF8102003831B8 /* DrinkView.swift */; };
+		5FC7448528BF834D003831B8 /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7448428BF834C003831B8 /* DrinkItem.swift */; };
+		5FC7448728C07128003831B8 /* OrderBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7448628C07128003831B8 /* OrderBasket.swift */; };
+		5FC7448928C07782003831B8 /* DrinkListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7448828C07782003831B8 /* DrinkListener.swift */; };
+		5FC7448C28C0848C003831B8 /* BasketListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7448B28C0848C003831B8 /* BasketListener.swift */; };
+		5FC7448F28C08D2E003831B8 /* OrderBasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7448E28C08D2E003831B8 /* OrderBasketView.swift */; };
+		5FC7449228C096BB003831B8 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7449128C096BB003831B8 /* Double.swift */; };
+		FA6166D528C3863300C6AD1B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FA6166D428C3863300C6AD1B /* FirebaseAuth */; };
+		FA6166D728C3863300C6AD1B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FA6166D628C3863300C6AD1B /* FirebaseFirestore */; };
+		FA83599E28BFFACC00915F5B /* DrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83599D28BFFACB00915F5B /* DrinkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +53,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F29E0D828C1B85300D52D41 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		5F29E0DA28C1C37600D52D41 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		5F29E0DC28C1CD9B00D52D41 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5F29E0DE28C1F4ED00D52D41 /* FinishRegistractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRegistractionView.swift; sourceTree = "<group>"; };
+		5F29E0E028C2161700D52D41 /* FUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
 		5F461D3328BF57100049AA43 /* Coffe menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffe menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F461D3628BF57100049AA43 /* Coffe_menuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffe_menuApp.swift; sourceTree = "<group>"; };
-		5F461D3828BF57100049AA43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5F461D3828BF57100049AA43 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5F461D3A28BF57190049AA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F461D3D28BF57190049AA43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F461D4328BF57190049AA43 /* Coffe menuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffe menuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +68,18 @@
 		5F461D4D28BF57190049AA43 /* Coffe menuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffe menuUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F461D5128BF57190049AA43 /* Coffe_menuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffe_menuUITests.swift; sourceTree = "<group>"; };
 		5F461D5328BF57190049AA43 /* Coffe_menuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffe_menuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F461D6028BF59260049AA43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5FC7447A28BF69F0003831B8 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		5FC7447C28BF71C9003831B8 /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
+		5FC7447E28BF72A0003831B8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5FC7448228BF8102003831B8 /* DrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkView.swift; sourceTree = "<group>"; };
+		5FC7448428BF834C003831B8 /* DrinkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
+		5FC7448628C07128003831B8 /* OrderBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBasket.swift; sourceTree = "<group>"; };
+		5FC7448828C07782003831B8 /* DrinkListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkListener.swift; sourceTree = "<group>"; };
+		5FC7448B28C0848C003831B8 /* BasketListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketListener.swift; sourceTree = "<group>"; };
+		5FC7448E28C08D2E003831B8 /* OrderBasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBasketView.swift; sourceTree = "<group>"; };
+		5FC7449128C096BB003831B8 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		FA83599D28BFFACB00915F5B /* DrinkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6166D528C3863300C6AD1B /* FirebaseAuth in Frameworks */,
+				FA6166D728C3863300C6AD1B /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +132,15 @@
 		5F461D3528BF57100049AA43 /* Coffe menu */ = {
 			isa = PBXGroup;
 			children = (
+				5FC7449028C096AD003831B8 /* Extensions */,
 				5F461D3628BF57100049AA43 /* Coffe_menuApp.swift */,
-				5F461D3828BF57100049AA43 /* ContentView.swift */,
+				5F461D6028BF59260049AA43 /* GoogleService-Info.plist */,
 				5F461D3A28BF57190049AA43 /* Assets.xcassets */,
 				5F461D3C28BF57190049AA43 /* Preview Content */,
+				5FC7448128BF76F1003831B8 /* Model */,
+				5FC7448028BF76E4003831B8 /* Helpers */,
+				5FC7448D28C08D15003831B8 /* VIews */,
+				5FC7448A28C07785003831B8 /* Firebase Listener */,
 			);
 			path = "Coffe menu";
 			sourceTree = "<group>";
@@ -127,6 +170,58 @@
 			path = "Coffe menuUITests";
 			sourceTree = "<group>";
 		};
+		5FC7448028BF76E4003831B8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5FC7447C28BF71C9003831B8 /* FirebaseReference.swift */,
+				5FC7447E28BF72A0003831B8 /* Constant.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5FC7448128BF76F1003831B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FC7447A28BF69F0003831B8 /* Drink.swift */,
+				5FC7448628C07128003831B8 /* OrderBasket.swift */,
+				5F29E0DA28C1C37600D52D41 /* Order.swift */,
+				5F29E0E028C2161700D52D41 /* FUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FC7448A28C07785003831B8 /* Firebase Listener */ = {
+			isa = PBXGroup;
+			children = (
+				5FC7448828C07782003831B8 /* DrinkListener.swift */,
+				5FC7448B28C0848C003831B8 /* BasketListener.swift */,
+			);
+			path = "Firebase Listener";
+			sourceTree = "<group>";
+		};
+		5FC7448D28C08D15003831B8 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				5F461D3828BF57100049AA43 /* HomeView.swift */,
+				5FC7448228BF8102003831B8 /* DrinkView.swift */,
+				5FC7448428BF834C003831B8 /* DrinkItem.swift */,
+				FA83599D28BFFACB00915F5B /* DrinkDetail.swift */,
+				5FC7448E28C08D2E003831B8 /* OrderBasketView.swift */,
+				5F29E0D828C1B85300D52D41 /* CheckoutView.swift */,
+				5F29E0DC28C1CD9B00D52D41 /* LoginView.swift */,
+				5F29E0DE28C1F4ED00D52D41 /* FinishRegistractionView.swift */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		5FC7449028C096AD003831B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5FC7449128C096BB003831B8 /* Double.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +238,10 @@
 			dependencies = (
 			);
 			name = "Coffe menu";
+			packageProductDependencies = (
+				FA6166D428C3863300C6AD1B /* FirebaseAuth */,
+				FA6166D628C3863300C6AD1B /* FirebaseFirestore */,
+			);
 			productName = "Coffe menu";
 			productReference = 5F461D3328BF57100049AA43 /* Coffe menu.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +314,9 @@
 				Base,
 			);
 			mainGroup = 5F461D2A28BF570F0049AA43;
+			packageReferences = (
+				FA6166D328C3863300C6AD1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5F461D3428BF57100049AA43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +335,7 @@
 			files = (
 				5F461D3E28BF57190049AA43 /* Preview Assets.xcassets in Resources */,
 				5F461D3B28BF57190049AA43 /* Assets.xcassets in Resources */,
+				5F461D6128BF59270049AA43 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +360,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F461D3928BF57100049AA43 /* ContentView.swift in Sources */,
+				5F461D3928BF57100049AA43 /* HomeView.swift in Sources */,
+				5FC7448F28C08D2E003831B8 /* OrderBasketView.swift in Sources */,
+				5FC7448528BF834D003831B8 /* DrinkItem.swift in Sources */,
+				5FC7448C28C0848C003831B8 /* BasketListener.swift in Sources */,
+				5FC7449228C096BB003831B8 /* Double.swift in Sources */,
+				FA83599E28BFFACC00915F5B /* DrinkDetail.swift in Sources */,
+				5FC7447B28BF69F0003831B8 /* Drink.swift in Sources */,
+				5FC7447F28BF72A0003831B8 /* Constant.swift in Sources */,
+				5FC7448728C07128003831B8 /* OrderBasket.swift in Sources */,
+				5FC7448328BF8102003831B8 /* DrinkView.swift in Sources */,
+				5F29E0D928C1B85300D52D41 /* CheckoutView.swift in Sources */,
+				5F29E0DF28C1F4ED00D52D41 /* FinishRegistractionView.swift in Sources */,
+				5FC7447D28BF71C9003831B8 /* FirebaseReference.swift in Sources */,
+				5F29E0DB28C1C37600D52D41 /* Order.swift in Sources */,
+				5FC7448928C07782003831B8 /* DrinkListener.swift in Sources */,
+				5F29E0E128C2161700D52D41 /* FUser.swift in Sources */,
+				5F29E0DD28C1CD9C00D52D41 /* LoginView.swift in Sources */,
 				5F461D3728BF57100049AA43 /* Coffe_menuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +543,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +572,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,6 +698,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA6166D328C3863300C6AD1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA6166D428C3863300C6AD1B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA6166D328C3863300C6AD1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FA6166D628C3863300C6AD1B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA6166D328C3863300C6AD1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F461D2B28BF570F0049AA43 /* Project object */;
 }
